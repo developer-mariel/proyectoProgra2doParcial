@@ -1,0 +1,2 @@
+estu={394704: "Carlos Terrazas",394611: "Mariel Rivas",394570: "Ricardo Robles",394412: "Elias Campos"}
+print()
