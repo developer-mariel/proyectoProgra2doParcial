@@ -2,7 +2,6 @@ import pyfiglet
 import time
 from colorama import init, Fore, Back, Style
 init()
-
 def ppl():
     alumnos={394611: "Mariel Rivas", 394570: "Ricardo Robles", 394704:"Carlos Terrazas", 394412:"Elías Campos"}
     opc = 0
@@ -73,4 +72,3 @@ def ppl():
 
 if __name__ == "__main__":
     ppl()
-    
