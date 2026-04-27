@@ -1,0 +1,92 @@
+ASIGNATURA CLAVE BI204
+UNIVERSIDAD/FACULTAD MESTRO(A): Rocío Patricia Rivas Llanas
+SEMESTRE: 2º GRUPO: 2K2 SEM ENERO-JUNIO 2025, SEGUNDO PARCIAL
+Objetivo
+EXCELENTE BUENOSUFICIENTE (CON POSIBILIDADES DE 
+MEJORA)INSUFICIENTE
+10 puntos 8 puntos 5.5 puntos 0.5 puntos
+Se respeta la fecha y hora indicada. Se presenta en la fecha pero no en la hora indicada. Se presenta un día después de la fecha acordada. Se presenta días después de la fecha indicada.
+0.5 0.5 0.3 0.1
+Todos los integrantes del  equipo presentan el 
+programa.La mayoría de los integrantes del equipo presentan el 
+programaMenos de la mitad de la cantidad integrantes del 
+equipo presentan el programa.No hay ningún integrante del equipo presente.
+0.5 0.3 0.2 0
+El programa usa todas las instrucciones o 
+estructuras condicionales dentro del programa asi 
+como una lista o un diccionario o un arreglo y es 
+funcional en la ejecución del programa. El programa usa alguna estructura condicional dentro 
+del código y es funcional en la ejecución del programa 
+pero no se implementa ninguna lista o un diccionario o 
+arreglo .El programa no usa ninguna estructura condicional 
+dentro del código pero si implementa  una lista o 
+diccionario o un arreglo que es funcional  en la 
+ejecución del programa. El programa no utiliza ninguna estructura condicional 
+dentro del código y no contiene ni listas ni diccionarios 
+en el programa. 
+1.5 1.3 1 0
+Verifica que todos los elementos que se tecleen 
+sean los adecuados para el programa (rango 
+correcto de numeros por ejemplo que no acepte 
+numeros negativos).Verifica que algunos de los elementos que se tecleen 
+sean los adecuados para el programa.Contiene la verificación de elementos pero no es 
+funcional en la ejecución del programa.No presenta ninguna instrucción de validación dentro 
+del código del programa.
+1 0.8 0.5 0.2
+El programa contiene al menos una excepción  y es 
+totalmente funcional en la ejecución del programa.No presenta ninguna excepción en código del 
+programa.
+1.5 1 1 0
+El programa se presenta en el lenguaje pythonEl programa presenta en un lenguaje de programación 
+de alto nivel diferente.El programa se presenta en pseint.El programa no se presenta en ningun lenguae de 
+programación.
+0.5 0.5 0.2 0
+El programa se ejecuta al no haber errores en 
+instrucciones.El programa trae errores en una instrucción y se 
+interrumpe la ejecuciónEl programa trae errores en la mayoría de las 
+instrucciones.El programa no se ejecuta.
+1 0.8 0.5 0.2
+El programa realiza lo que se pide.El programa cumple con la mayoría de las 
+instrucciones indicadas.El programa cumple con las mínimas instrucciones 
+indicadas.El programa no cumple con las instrucciones 
+indicadas.
+1.5 1.3 0.8 0
+Todas las respuestas son correctas La mayorìa de las respuestas son correctas Un minimo de respuestas son correctasNinguna respuesta es correcta o no había equipo que 
+contestara las preguntas o el alumno no asistió por lo 
+que no se le pudo preguntar.
+2 1.5 1 0CRITERIOS DE EVALUACIÒN
+Entrega del programa en la fecha indicada: 
+5%
+Están presentes todos los integrantes del 
+equipo para presentar el programa: 5%
+Uso de instrucciones o estructuras 
+condicionales (IF,WHILE,FOR,MATCH-CASE)  
+15% 
+Verifica los datos que se piden 10% 
+Uso e implementación de al menos una 
+excepción (try-exception) : 15% 
+Presentan el programa hecho en el lenguaje 
+python: 5%
+Ejecución del programa: 10%
+Se cumplen los objetivos del programa: 15%
+Se contestan las preguntas que se realiza el 
+docente en la presentación del programa: 
+20%El programa contiene al menos una excepción  pero no es funcional en la ejecución del programa.Aplicar los conceptos vistos en clase.El cual contendra las opciones a elegir por el usuario (en código se desarrollan todas las opciones):
+1. BÚSQUEDA DE UN ALUMNO
+Esta opción buscará un alumno en un equipo (el cual es el equipo desarrollador del programa), los integrantes deben guardarse en una variable como un diccionario o lista o arreglo para su búsqueda por matricula.
+Si el alumno fue encontrado lo indicará y desplegará el nombre
+Si no, indicará que no esta en el equipo.
+2. CALIFICACIONES Y PROMEDIO DEL EQUIPO
+Esta opción usará a todos los integrantes del equipo, para cada integrante solicitará los 3 parciales de una sola materia, calculará el promedio y dependiendo del promedio indicará si acreditó la materia (pueden 
+indicar la materia desde código (preestablecida) o pedir que se ingrese la materia).
+3. PERMISO PARA EL NO ORDINARIO POR EQUIPO
+Esta opción usará a todos los integrantes del equipo, para cada uno solicitará cuantas materias estan cursando, cuantas fueron aprobadas o reprobadas y se evaluará si tiene derecho a presentar no ordinario 
+dependiendo del articulo 61 y mostrará a pantalla el reporte indicando el estatus de cada integrante (si tiene permitido o no realizar el no ordinario y si repetira o no el semestre):
+Artículo 61. Para tener derecho a evaluaciones no ordinarias, el alumno deberá aprobar por lo menos el 50% de su carga académica, siempre y cuando curse dos o más materias; en caso contrario, deberá repetir la 
+materia no acreditada.
+4. EQUIPO DESARROLLADOR
+Se presenta el nombre del equipo
+Opción para salir del programa, mientras no indique que se desea salir, el menú de opciones se presentará después de la ejecución de cada opción.
+Se revisará el programa el día, a la hora de clase y en el laboratorio correspondiente.5. SALIRPROGRAMACIÓN PARA INGENIEROS
+Universidad Autónoma de Chihuahua, Facultad de Ingeniería
+Desarrollar un programa computacional en un lenguaje de programación (Python)
