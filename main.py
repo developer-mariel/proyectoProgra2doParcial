@@ -2,7 +2,7 @@ import sys
 from typing import Dict
 
 # Datos del equipo desarrollador
-TEAM_NAME = "Equipo Alpha"
+TEAM_NAME = "Los 4 fantásticos"
 TEAM_MEMBERS: Dict[str, str] = {
     "394570": "Ricardo Robles Mancha",
     "394704": "Carlos Terrazas Rugelio",
