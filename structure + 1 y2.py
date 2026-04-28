@@ -1,3 +1,5 @@
+import sys
+
 import pyfiglet
 import time
 from colorama import init, Fore, Back, Style
@@ -78,8 +80,40 @@ def ppl():
                     else:
                         print("Resultado: REPROBADO")
             case 3:
-                print("Permiso para el no ordinario por equipo")
-                #podemos pintar de rojo cuando no tenga derecho y de verde cuando sí
+                print("--- Permiso para el no ordinario por equipo ---")
+                for matricula, nombre in alumnos.items():
+                    print(f"\nEvaluando estatus de: {nombre} ({matricula})")
+                    
+                    while True:
+                        try:
+                            materias_cursadas = int(input("¿Cuántas materias has cursado? "))
+                            if 1 <= materias_cursadas <= 20:
+                                break
+                            else:
+                                print("Error: debes ingresar un número entero entre 1 y 20.")
+                        except ValueError:
+                            print("Error: entrada inválida. Por favor, ingresa un número entero.")
+
+                    while True:
+                        try:
+                            materias_aprobadas = int(input("¿Cuántas materias has aprobado? "))
+                            if 0 <= materias_aprobadas <= materias_cursadas:
+                                break
+                            else:
+                                print(f"Error: debes ingresar un número entero entre 0 y {materias_cursadas}.")
+                        except ValueError:
+                            print("Error: entrada inválida. Por favor, ingresa un número entero.")
+
+                    if materias_cursadas >= 2:
+                        porcentaje_aprobacion = (materias_aprobadas / materias_cursadas) * 100
+                        if porcentaje_aprobacion >= 50:
+                            print("Tiene permitido realizar el examen no ordinario.")
+                        
+                        else:
+                            print("No tiene derecho al no ordinario. Deberá repetir el semestre o materias.")
+                    else:
+                        print("No tiene derecho al no ordinario (debe cursar 2 o más materias). Deberá repetir la materia no acreditada.")
+
             case 4:
                 txt1=pyfiglet.figlet_format("        LOS", font="slant")
                 txt2=pyfiglet.figlet_format("FANTASTICOS", font="slant")
