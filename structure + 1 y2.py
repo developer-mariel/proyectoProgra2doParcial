@@ -32,7 +32,7 @@ def ppl():
 
                     try:
                         mat = int(input("Ingresa la matricula (0 para salir): "))
-                    except ValueError:
+                    except:
                         print("Error: debes ingresar un número")
                         continue   # regresa al inicio del while
                     if mat == 0:
@@ -58,7 +58,7 @@ def ppl():
                                 break
                             else:
                                 print("Error: la calificación debe estar entre 0 y 10")
-                        except ValueError:
+                        except:
                             print("Error: debes ingresar un número")
                     #Calificación 2
                     while True:
@@ -68,7 +68,7 @@ def ppl():
                                 break
                             else:
                                 print("Error: la calificación debe estar entre 0 y 10")
-                        except ValueError:
+                        except:
                             print("Error: debes ingresar un número")
                     #Calificacion 3
                     while True:
@@ -78,7 +78,7 @@ def ppl():
                                 break
                             else:
                                 print("Error: la calificación debe estar entre 0 y 10")
-                        except ValueError:
+                        except:
                             print("Error: debes ingresar un número")
                     promedio=(calif1 * 0.3) + (calif2 * 0.3) + (calif3 * 0.4)
                     print("Promedio =", promedio)
