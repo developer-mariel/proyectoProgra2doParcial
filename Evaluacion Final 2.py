@@ -87,65 +87,74 @@ def ppl():
                     else:
                         print("Resultado: REPROBADO")
             case 3:
+                reiniciar=True
                 student = {394704: "Carlos Terrazas",394611: "Mariel Rivas",394570: "Ricardo Robles",    394412: "Elias Campos"}
-                while True:
-                    print("--------Reporte del Semestre--------")
+                
+                while reiniciar:
+                    reiniciar=False
 
-                    try:
-                        id = int(input("Ingresa matricula de estudiante: "))
-                    except:
-                        print("Error: debes ingresar un número")
-                        continue
+                    while True:
+                        print("--------Reporte del Semestre--------")
 
-                    if id in student:
-                        print("Bienvenido de vuelta, ", student[id])
-                        break
-                    else:
-                        print("Esta matrícula no es de un miembro del equipo")
+                        try:
+                            id = int(input("Ingresa matricula de estudiante: "))
+                        except:
+                            print("Error: debes ingresar un número")
+                            continue
 
-                    print("====================================")
-
-                while True:
-                    answer = input("¿Listo para ver tu progreso del semestre? (si/no): ")
-
-                    if answer == "si":
-                        print("¡Continuemos!")
-                        break
-                    else:
-                        print("Vaya, ¡pues no malgastes mi tiempo!")
-
-                while True:
-                    try:
-                        materia = float(input("¿Cuántas materias cursaste este semestre?: "))
-                        if 2 <= materia <= 10:
+                        if id in student:
+                            print("Bienvenido de vuelta, ", student[id])
                             break
                         else:
-                            print("Error: ninguna carrera cuenta con materias mayores a 10 o menores a 2")
-                    except:
-                        print("Error: debes ingresar un número")
+                            print("Esta matrícula no es de un miembro del equipo")
 
-                while True:
-                    try:
-                        passed = int(input("Dinos cuantas materias aprobaste: "))
-                        if 0 <= passed <= materia:
+                    while True:
+                        print("====================================")
+                        try:
+                            materia = float(input("¿Cuántas materias cursaste este semestre?: "))
+                            if 2 <= materia <= 10:
+                                break
+                            else:
+                                print("Error: ninguna carrera cuenta con materias mayores a 10 o menores a 2")
+                        except:
+                            print("Error: debes ingresar un número")
+
+                    while True:
+                        try:
+                            passed = int(input("Dinos cuantas materias aprobaste: "))
+                            if 0 <= passed <= materia:
+                                break
+                            else:
+                                print("Error: esto no cumple con lo que especificaste")
+                        except:
+                            print("Error: debes ingresar un número valido")
+
+                    failed = int(materia - passed)
+                    print("Según tu respuesta, las materias que has reprobado son: ", failed)
+
+                    calculo = round(materia/2)
+
+                    if -1 < failed < 1:
+                        print("Felicidades, has pasado el semestre sin necesidad de hacer ordinarios")
+                    else:
+                        if failed <= calculo:
+                            print("Aunque hayas reprobado una que otra materia, tienes derecho a ORDINARIO")
+                        else:
+                            print("Lo siento, reprobaste más de la mitad de tus materias, debes REPETIRLO TODO")
+
+                    while True:
+                        print("====================================")
+                        answer = input("¿Listo para ver el siguiente progreso? (si/no): ")
+
+                        if answer == "no":
+                            print("Vaya, ¡pues no malgastes mi tiempo!")
+                            break
+                        elif answer:
+                            print("¡Continuemos!")
+                            reiniciar=True
                             break
                         else:
-                            print("Error: esto no cumple con lo que especificaste")
-                    except:
-                        print("Error: debes ingresar un número valido")
-
-                failed = int(materia - passed)
-                print("Según tu respuesta, las materias que has reprobado son: ", failed)
-
-                calculo = round(materia/2)
-
-                if -1 < failed < 1:
-                    print("Felicidades, has pasado el semestre sin necesidad de hacer ordinarios")
-                else:
-                    if failed <= calculo:
-                        print("Aunque hayas reprobado una que otra materia, tienes derecho a ORDINARIO")
-                    else:
-                        print("Lo siento, reprobaste más de la mitad de materias, debes REPETIRLO TODO")
+                            print("Por favor responde si o no, nada más")
 
             case 4:
                 txt1=pyfiglet.figlet_format("        LOS", font="slant")
@@ -186,4 +195,4 @@ def ppl():
         input(" Presiona cualquier tecla para continuar")            
 
 if __name__ == "__main__":
-    ppl()
+    ppl()         
