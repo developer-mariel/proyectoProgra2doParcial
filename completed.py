@@ -95,11 +95,11 @@ def ppl():
                     print(" ")
                     print("Permiso para no ordinario de",alumnos[alumno]) 
                     while True:
-                        answer = input("¿Listo para ver tu progreso del semestre? (si/no): ")
-                        if answer == "no":
+                        answer = input("¿Listo para ver tu progreso del semestre? (S/N): ")
+                        if answer.lower() == "n":
                             print("Vaya, ¡pues no malgastes mi tiempo!")
                             break
-                        elif answer == "si" :    
+                        elif answer.lower() == "s" or answer.lower() == "y":    
                             print("¡Continuemos!")
                             while True:
                                 try:
