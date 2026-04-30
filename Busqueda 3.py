@@ -1,10 +1,18 @@
-alumnos = {394704: "Carlos Terrazas",394611: "Mariel Rivas",394570: "Ricardo Robles",
-394412: "Elias Campos"}
+alumnos = {
+    394704: "Carlos Terrazas",
+    394611: "Mariel Rivas",
+    394570: "Ricardo Robles",
+    394412: "Elias Campos"
+}
 
 while True:
     print("--- BUSQUEDA DE ALUMNO ---")
 
-    mat = int(input("Ingresa la matricula (0 para salir): "))
+    try:
+        mat = int(input("Ingresa la matricula (0 para salir): "))
+    except:
+        print("Error: debes ingresar un número")
+        continue   # regresa al inicio del while
 
     if mat == 0:
         print("Saliendo de la busqueda...")
